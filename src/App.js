@@ -1,16 +1,14 @@
 
 import './App.css';
-import { Welcome1, Welcome2 } from './components/Welcome'
-import  Welcome from './components/Welcome'
+import { Welcome } from './components/Welcome'
+import Greet from "./components/Greet";
 
 
 function App() {
   return (
     <div className="App">
-
         <Welcome/>
-        <Welcome1/>
-        <Welcome2/>
+        <Greet/>
     </div>
   );
 }
