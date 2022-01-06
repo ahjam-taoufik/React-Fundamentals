@@ -1,12 +1,12 @@
 
 import './App.css';
 
-import Greet from './components/Greet';
+import Parent from './components/Parent';
 
 function App() {
   return (
     <div className="App">
-         <Greet ></Greet>
+         <Parent ></Parent>
        
     </div>
   );
