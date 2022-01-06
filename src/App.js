@@ -1,13 +1,13 @@
 
 import './App.css';
-import Logged from './components/Logged';
+import PersonList from './components/PersonList';
 
 
 
 function App() {
   return (
     <div className="App">
-        <Logged/>
+       <PersonList/>
     </div>
   );
 }
