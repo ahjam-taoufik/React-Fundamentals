@@ -2,27 +2,24 @@ import React from "react";
 
 
 
-const Hello = () => {
+// const Hello = (props) => {
+//     // console.log(props);
+//     return ( 
+//            <div>
+//              <h1>Hello {props.name}</h1>
+//              {props.children}
+//            </div>
+//      );
 
 
-    // return ( 
-    //      React.createElement('div',{id:"id1",className:'class1'},          
-    //         React.createElement('h1',null,'Hello'),
-    //         React.createElement('h1',null,'Hello2') 
-    //      )
-    //  );
-
+const Hello = ({name,children}) => {
     return ( 
            <div>
-               <h1>Hello</h1>
-               <h1>Hello2</h1>
+             <h1>Hello {name}</h1>
+             {children}
            </div>
      );
-
-
-
-
-
+     
 }
  
 export default Hello;
