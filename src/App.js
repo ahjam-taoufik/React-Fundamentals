@@ -1,13 +1,13 @@
 
 import './App.css';
+import Logged from './components/Logged';
 
-import Parent from './components/Parent';
+
 
 function App() {
   return (
     <div className="App">
-         <Parent ></Parent>
-       
+        <Logged/>
     </div>
   );
 }
