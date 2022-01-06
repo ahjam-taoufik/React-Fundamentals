@@ -10,29 +10,20 @@ export default class Logged extends Component {
               }
            }
 
+handlerLog=()=>{
+    this.setState({
+        isLogged:!this.state.isLogged
+    })
+}
+
+
+
     render() {
-
-            // ======Fourth Methode=============
-               return this.state.isLogged && <div>your are Sign In ...</div>
-             // ======Thirth Methode=============
-           // return this.state.isLogged?<div>your are Sign In ...</div>:<div>your are Sign Out ...</div>
-            // ======Second Methode=============
-            //   let message
-            //       if (this.state.isLogged) {
-            //           message=<div>your are Sign In ...</div>
-            //       }
-            //       if (!this.state.isLogged) {
-            //         message=<div>your are Sign Out ...</div>
-            //     }
-            //     return message
-
-             // ======First Methode=============
-            // if (this.state.isLogged) {
-            //    return <div>your are Sign In ...</div>  
-            // }
-            // if (!this.state.isLogged) {
-            //    return <div>your are Sign Out ...</div>  
-            // }
+           return <div>
+                     {this.state.isLogged?<div>your are Sign In ...</div>:<div>your are Sign Out ...</div>}
+                     <button onClick={this.handlerLog}>sign {this.state.isLogged?'out':'in'}</button>
+                 </div> 
+           
             
     }
 }
