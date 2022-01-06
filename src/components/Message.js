@@ -11,19 +11,17 @@ class Message extends Component {
              }
        }
 
-      funcHandler() {
-        //   this.state.count=this.state.count+1;
-        
-        this.setState(
-             {
-            count:this.state.count+1,
-        },()=>{
-            console.log('callback function: ',this.state.count);
-             }
-
-             )
-           //  console.log('out of setstate1: ', this.state.count);
+      funcHandler() {    
+                this.setState((preState)=>({ count:preState.count+1}) )
+               
         }
+
+     increment(){
+         this.funcHandler()
+         this.funcHandler()
+         this.funcHandler()
+     }
+
 
 
     render(){
@@ -31,7 +29,7 @@ class Message extends Component {
         return <div>
                    <h3>{this.state.message1}{this.state.count} {this.state.message2}</h3>
                    {/* <h1>{this.state.count}</h1> */}
-                   <button onClick={()=>this.funcHandler()}>click me</button>
+                   <button onClick={()=>this.increment()}>click me</button>
               </div>
     }
 }
