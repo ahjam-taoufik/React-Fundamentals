@@ -3,13 +3,14 @@ import React from "react";
 
 
 class Greet extends React.Component {
+
+  clickHandler(){
+    console.log('click from React Class');
+  }
+
   render(){
-      const{FName,LName,children}=this.props
-      console.log(FName);
-     // console.log(this.props);
               return <div>
-                         <h1>Salam  {FName} {LName} </h1>
-                         {children}
+                          <button onClick={this.clickHandler}>Class click me</button>
                     </div>  
             }
 }

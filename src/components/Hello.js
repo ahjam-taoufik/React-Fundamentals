@@ -2,28 +2,18 @@ import React from "react";
 
 
 
-// const Hello = (props) => {
-//     const{ FName,LName}=props
-//     return ( 
-//            <div>
-//              <h1>Hello {FName} {LName}</h1>
-//          
-//            </div>
-//      );}
+const Hello = () => {
 
-const Hello = ({ FName,LName, children}) => {
     
+   function clickHandler(){
+        console.log('click from React function ');
+   }
+
     return ( 
            <div>
-             <h1>Hello {FName} {LName}</h1>
-                  {children}
+                <button onClick={clickHandler}>Function click me</button>
            </div>
      );}
-
-
-
-
-
 
  
 export default Hello;
