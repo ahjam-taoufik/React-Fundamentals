@@ -1,6 +1,6 @@
 
 import './App.css';
-import GetComp from './components/GetComp';
+import PostCom from './components/PostCom';
 
 
 
@@ -8,7 +8,7 @@ function App() {
    
   return (
     <div className="App">
-      <GetComp/>
+       <PostCom/>
     </div>
   );
 }
