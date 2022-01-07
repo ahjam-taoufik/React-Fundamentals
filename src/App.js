@@ -1,13 +1,14 @@
 
 import './App.css';
-import ParentCom from './components/ParentCom';
+import GetComp from './components/GetComp';
+
 
 
 function App() {
    
   return (
     <div className="App">
-       <ParentCom/>
+      <GetComp/>
     </div>
   );
 }
