@@ -1,11 +1,11 @@
 
 import './App.css';
-import Inline from './components/Inline';
+import ModuleStyle from './components/ModuleStyle'
 
 function App() {
   return (
     <div className="App">
-        <Inline/>
+        <ModuleStyle/>
     </div>
   );
 }
