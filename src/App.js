@@ -1,11 +1,11 @@
 
 import './App.css';
-import ModuleStyle from './components/ModuleStyle'
+import FromHandling from './components/FromHandling';
 
 function App() {
   return (
     <div className="App">
-        <ModuleStyle/>
+      <FromHandling/>
     </div>
   );
 }
