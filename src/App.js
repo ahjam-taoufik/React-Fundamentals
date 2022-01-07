@@ -8,7 +8,7 @@ import Stylesheet from './components/Stylesheet';
 function App() {
   return (
     <div className="App">
-       <Stylesheet primary={true} />
+       <Stylesheet primaryColor={true}  fontXl={false} />
     </div>
   );
 }

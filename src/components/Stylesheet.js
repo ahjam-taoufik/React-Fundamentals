@@ -6,9 +6,10 @@ import './Style.css'
 
 
 const Stylesheet = (props) => {
-   const className=props.primary?'primary-color':'secondary-color'
+   const primaryColor=props.primaryColor?'primary-color':''
+   const fontXl=props.fontXl?'font-xl':''
 
-  return <div> <h1 className={className}>Stylesheet</h1></div>;
+  return <div> <h1 className={`${primaryColor } ${fontXl }`}>Stylesheet</h1></div>;
 };
 
 export default Stylesheet;

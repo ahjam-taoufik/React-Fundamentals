@@ -6,3 +6,7 @@
 .secondary-color{
     color: darkgreen;
 }
+
+.font-xl{
+    font-size: 60px;
+}
