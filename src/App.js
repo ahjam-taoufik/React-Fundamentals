@@ -1,11 +1,13 @@
 
 import './App.css';
-import FromHandling from './components/FromHandling';
+import ParentCom from './components/ParentCom';
+
 
 function App() {
+   
   return (
     <div className="App">
-      <FromHandling/>
+       <ParentCom/>
     </div>
   );
 }
