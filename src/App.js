@@ -1,14 +1,11 @@
 
 import './App.css';
-import Stylesheet from './components/Stylesheet';
-
-
-
+import Inline from './components/Inline';
 
 function App() {
   return (
     <div className="App">
-       <Stylesheet primaryColor={true}  fontXl={false} />
+        <Inline/>
     </div>
   );
 }
